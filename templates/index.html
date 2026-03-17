@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Clinic Queue</title>
+  </head>
+
+  <body>
+    <h1>Clinic Queue Manager</h1>
+
+    <a href="/add">Add Patient</a>
+    <a href="/serve">Serve Next Patient</a>
+
+    <h2>Waiting List</h2>
+
+    <ul>
+      {% for patient in queue %}
+      <li>{{patient.name}} - {{patient.arrival_time}}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Patients Served Today: {{served}}</h3>
+  </body>
+</html>
