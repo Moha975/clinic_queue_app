@@ -1,3 +1,4 @@
+# Handles queue operations like add and serve patient
 from models import Patient
 
 class ClinicQueue:
