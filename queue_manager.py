@@ -7,6 +7,7 @@ class ClinicQueue:
         self.served_today = 0
 
     def add_patient(self, name):
+        # Add a New patient to the queue
         patient = Patient(name)
         self.queue.append(patient)
 
