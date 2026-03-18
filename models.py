@@ -1,3 +1,4 @@
+# Patient model for storing patient data
 from datetime import datetime
 
 class Patient:
