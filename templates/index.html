@@ -11,7 +11,7 @@
     <a href="/serve">Serve Next Patient</a>
 
     <h2>current patient queue</h2>
-
+    <p>Below is the list of patients waiting:</p>
     <ul>
       {% for patient in queue %}
       <li>{{patient.name}} - {{patient.arrival_time}}</li>
