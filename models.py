@@ -7,4 +7,4 @@ class Patient:
         self.arrival_time = datetime.now()
 
     def get_details(self):
-        return f"{self.name} arrived at {self.arrival_time}"
+        return f"{self.name} arrived at {self.arrival_time.strftime('%H:%M:%S')}"
